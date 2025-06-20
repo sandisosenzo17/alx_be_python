@@ -18,12 +18,12 @@ def main():
       print("Invalid choice!")
 
 def add():
-  item = input("Enter item to add: ")
+  item = input("Enter the item to add: ")
   shopping_list.append(item)
   print("Item added")
 
 def delete():
-  item = input("Enter item to delete: ")
+  item = input("Enter the item to delete: ")
   counter = 0
   for i in shopping_list:
     counter += 1
