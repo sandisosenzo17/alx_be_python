@@ -2,7 +2,7 @@ shopping_list = []
 
 def main():
   while True:
-    menu()
+    display_menu()
     choice = input("Enter your choice(1, 2, 3 or 4): ")
 
     if choice == '1':
@@ -41,7 +41,7 @@ def view():
   for i in shopping_list:
     print(i)
 
-def menu():
+def display_menu():
   print("\t\tShopping List Manager")
   print("1. Add Item")
   print("2. Remove Item")
