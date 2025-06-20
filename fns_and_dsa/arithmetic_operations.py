@@ -21,3 +21,4 @@ def perform_operation(num1, num2, operation):
 		case _:
 			return "Unknown operation"
 
+print("Test.")
