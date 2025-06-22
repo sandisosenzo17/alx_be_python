@@ -1,0 +1,19 @@
+from datetime import datetime, timedelta
+
+
+def display_current_datetime():
+  current_date = datetime.now()
+  
+  #Date and time format is YYYY-MM-DD HH:MM:SS
+  print(f"Current date and time: {current_date.strftime("%Y-%m-%d %H:%M:%S")}")
+
+
+display_current_datetime()
+
+num_days = int(input("Enter the number of days to the current date: "))
+
+def calculate_future_date():
+  str_future = datetime.now() + timedelta(days=num_days)
+  print(f"Future date: {str(str_future).split()[0]}")
+
+calculate_future_date()
