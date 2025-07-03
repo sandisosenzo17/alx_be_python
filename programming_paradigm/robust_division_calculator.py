@@ -12,7 +12,7 @@ def safe_divide(numerator, denominator):
     if denominator == 0:
       raise ZeroDivisionError
     else:
-      return numerator/denominator
+      return f"The result of the division is {numerator/denominator}"
   except ZeroDivisionError:
     return "Error: Cannot divide by zero."
   
