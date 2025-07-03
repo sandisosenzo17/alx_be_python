@@ -23,7 +23,7 @@ class TestCalculator(unittest.TestCase):
     self.assertEqual(self.calc.multiply(3, -6), -18)
     self.assertEqual(self.calc.multiply(-3, -6), 18)
   
-  def test_divide(self):
+  def test_division(self):
     self.assertEqual(self.calc.divide(18, 3), 6)
     self.assertEqual(self.calc.divide(18, -3), -6)
     self.assertEqual(self.calc.divide(18, "one"), "Invalid value")
