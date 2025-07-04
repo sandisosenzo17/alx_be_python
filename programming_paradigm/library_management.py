@@ -9,6 +9,9 @@ class Book:
 
   def return_book(self):
     self._is_checked_out = False
+
+  def is_checked_out(self):
+    return self._is_checked_out
   
 
 class Library:
@@ -32,10 +35,8 @@ class Library:
   
   def list_available_books(self):
     for book in self._books:
-      if book._is_checked_out:
-        continue
-      else:
-        print(f"{book.title} by {book.author}")
+      if not book.is_checked_out():
+        print(f"{book.title} by {book.author}")        
 
 
 def main():
