@@ -11,22 +11,22 @@ class Library:
   
   def add_book(self, title, author):
     book = Book(title, author)
-    book._is_checked_out = 'n'
+    book._is_checked_out = False
     self._books.append(book)
 
   def check_out_book(self, title):
     for book in self._books:
       if book.title == title:
-        book._is_checked_out = 'y'
+        book._is_checked_out = True
 
   def return_book(self, title):
     for book in self._books:
       if book.title == title:
-        book._is_checked_out = 'n'
+        book._is_checked_out = False
   
   def list_available_books(self):
     for book in self._books:
-      if book._is_checked_out == 'y':
+      if book._is_checked_out:
         continue
       else:
         print(f"{book.title} by {book.author}")
